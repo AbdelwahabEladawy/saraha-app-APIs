@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 
 const ConnectDB = async () => {
   await mongoose
-    .connect(process.env.URI)
+    .connect(process.env.ATLAS_URI)
     .then(() => {
       console.log("Database connected successfully");
     })
